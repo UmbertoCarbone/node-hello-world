@@ -8,7 +8,7 @@
     "watch": "node --watch index.js --env-file=.env"
   },
   "repository": {
-    "type": "git",
+    "type": "module",
     "url": "git+https://github.com/UmbertoCarbone/node-hello-world.git"
   },
   "keywords": [],
@@ -20,6 +20,8 @@
   "homepage": "https://github.com/UmbertoCarbone/node-hello-world#readme",
   "description": "",
   "dependencies": {
+    "axios": "^1.10.0",
+    "clack": "^0.1.0",
     "dotenv": "^16.5.0"
   }
 }
