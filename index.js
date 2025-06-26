@@ -23,13 +23,37 @@
 // Importa il modulo con require  e logga la parola segreta
 ---> 2° BONUS <--- 
 //installa chalk ed axios 
-
+//importa 
  */
+import chalk from 'chalk';
+import axios from 'axios';
+import dotenv from 'dotenv';
 
-console.log("Hello World")
+dotenv.config();
 
-require('dotenv').config()
 
-console.log(process.env.SECRET_KEY)
+const endpoint = "https://lanciweb.github.io/demo/api/pictures/"
+axios.get(endpoint)
+    .then(function (response) {
+        // handle success
+        console.log(response.data);
+        const pictures = response.data
+
+        pictures.forEach(picture => {
+            console.log(chalk.green(picture.title))
+        });
+    })
+
+
+/* console.log(chalk.blue('Hello') + ' World' + chalk.red('!')); */
+
+
+
+
+console.log(chalk.green("Hello Boolean"))
+
+console.log(chalk.magenta(process.env.SECRET_KEY))
+
+
 
 /* process. */
