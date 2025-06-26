@@ -7,6 +7,15 @@
 
 //Crea lo script,fallo partire, cambiando il nostro console.log() cambia la scritta anche nel  terminale --->
 "watch": "node --watch index.js"
+ */
+
+/*
+ ---> BONUS <--- 
+
+ //Installa dotevn ("npm i dotenv" nel terminale) 
+ //Aggiungi allo script (--env-file=.env)
+
+ //Crea un .gitignore per nascodere le cartelle non create da noi scrivendo node_modules/
 
  */
 
